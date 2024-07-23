@@ -9,7 +9,7 @@ networks:
 services:
   mysql:
     image: mysql:8.0
-    container_name: coe-arena-mysql
+    container_name: code-arena-mysql
     ports:
       - "3306:3306"
     environment:

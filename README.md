@@ -9,9 +9,13 @@
 
 $ cd {본인의 경로}/hackathon2-CodeArena-docker
 
-$ docker compose -f docker-compose.yml up
+$ docker compose -f docker-compose.yaml up
 
-$ docker exec -it bus-mysql sh
+#도커 컨테이너가 종료된 상태일 경우
+$ docker start code-arena-mysql
+
+#도커 실행 후 mysql 터미널 접속
+$ docker exec -it code-arena-mysql sh
 
 # docker container 안의 작업입니다.
 $ mysql -u root -p
